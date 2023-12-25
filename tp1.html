@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+       #objet{
+        width: 100px;
+        height: 100px;
+        background-color: #E80;
+        animation-name: monanimation;
+        animation-iteration-count: infinite;
+        animation-duration: 2s;
+        animation-timing-function: ease;
+        animation-direction: normal;
+       }
+       @keyframes monanimation {
+          0% {
+              width: 100px;
+              height: 100px;
+              transform: translate(0,0) rotate(0);
+              background-color: #E80;
+        }
+           25%{
+            width:100px;
+            height: 100px;
+            transform: translate(100%,0) rotate(-90deg);
+            background-color: #0A0;
+           }
+           50%{
+            width: 100px;
+            height: 100px;
+            transform: translate(100%,100%) rotate(-180deg);
+            background-color: #f0f;
+           }
+           75%{
+            width: 100px;
+            height: 100px;
+            transform: translate(0,100%) rotate(-270deg);
+            background-color: #00a;
+           }
+           100%{
+            width: 100px;
+            height: 100px;
+            transform: translate(0,0) rotate(-360deg);
+            background-color: #e80;
+           }
+       }
+    </style>
+</head>
+<body>
+    <div id="objet"></div>
+</body>
+</html>
